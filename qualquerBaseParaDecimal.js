@@ -1,7 +1,7 @@
 
 function converterParaDecimal(){
 
-let base = document.getElementById("baseNumereco").value; 
+let base = document.getElementById("bases").value; 
 let numero = document.getElementById("numereco").value; 
 let array = numero.split("").reverse(); // IMPORTANTE torna em array, e inverte para a potenciação pegar a posição correta
 let resultado = 0;
