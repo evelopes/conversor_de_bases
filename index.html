@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Bases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><h1>Conversor de bases</h1>
+    <form action="">
+        <label for="numeros">Informe o numero a ser convertido:</label><br>
+        <input type="text" id="numereco" ><BR><BR>
+        <label for="numeros">Informe a base que o numero está:: 2 para binário, 8 para octal, 10 para decimal ou 16 para hexadecimal</label><br>
+        <input type="text" id="baseNumereco" ><BR><BR>
+        <input type="button" value="CONVERTER" onclick="converterParaDecimal()">
+      </form>
+
+      <BR><BR>
+      <p>Binário: <i id="resultadoBin"></i></p>
+      <p>Decimal: <i id="resultadoDec"></i></p>
+      <p>Octal: <i id="resultadoOct"></i></p>
+      <p>Hexadecimal: <i id="resultadoHex"></i></p>
+
+<script src="decimalParaQualquerBase.js"></script>
+<script src="qualquerBaseParaDecimal.js"></script>
+<footer>
+    Desenvolvido por Eve Lopes
+</footer>
+</body>
+</html>
