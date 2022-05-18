@@ -1,31 +1,31 @@
-  let resto = [];
-  let hexadecimal = ["A", "B", "C", "D", "E", "F"];
-  let novaBase = "";
-  let binario;
-  let decimal;
-  let octal;
-  let hex;
-  
-  
-  function todasBases(numero){    
-    binario = dividir(numero,2);
-        decimal = dividir(numero,10);
-        octal = dividir(numero,8);
-        hex = dividir(numero,16);
-        
-document.getElementById("resultadoBin").innerHTML = binario;
-document.getElementById("resultadoDec").innerHTML = decimal;
-document.getElementById("resultadoOct").innerHTML = octal;
-document.getElementById("resultadoHex").innerHTML = hex;
+let resto = [];
+let hexadecimal = ["A", "B", "C", "D", "E", "F"];
+let novaBase = "";
+let binario;
+let decimal;
+let octal;
+let hex;
+
+
+function todasBases(numero) {
+  binario = dividir(numero, 2);
+  decimal = dividir(numero, 10);
+  octal = dividir(numero, 8);
+  hex = dividir(numero, 16);
+
+  document.getElementById("resultadoBin").innerHTML = binario;
+  document.getElementById("resultadoDec").innerHTML = decimal;
+  document.getElementById("resultadoOct").innerHTML = octal;
+  document.getElementById("resultadoHex").innerHTML = hex;
 }
 
 
 
 
 function dividir(valor, base) {
-    while(resto.length) {
-   resto.pop();
-}
+  while (resto.length) {
+    resto.pop();
+  }
 
   while (valor !== 0) {
     resto.push(valor % base);
