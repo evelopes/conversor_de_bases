@@ -37,3 +37,8 @@ p > i{
     font-size: 1.4em ;
 
 }
+
+
+#resultado {
+    display:none;
+}

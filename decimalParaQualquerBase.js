@@ -13,6 +13,10 @@ function todasBases(numero) {
   octal = dividir(numero, 8);
   hex = dividir(numero, 16);
 
+  let resultado = document.getElementById("resultado") ;
+  resultado.style.display = "block";
+
+
   document.getElementById("resultadoBin").innerHTML = binario;
   document.getElementById("resultadoDec").innerHTML = decimal;
   document.getElementById("resultadoOct").innerHTML = octal;
